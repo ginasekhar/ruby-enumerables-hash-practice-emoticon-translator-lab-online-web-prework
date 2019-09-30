@@ -19,6 +19,8 @@ end
 def get_japanese_emoticon(file_path, western_emo)
   
   jap_emo = emo_hash["get_emoticon"][western_emo]
+  
+  binding.pry
   if !jap_emo
     puts "Sorry, I don't know what that emoji means"
     return nil

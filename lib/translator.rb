@@ -19,6 +19,8 @@ end
 def get_japanese_emoticon(file_path, western_emo)
   
   emo_hash = load_library(file_path)
+  
+  if !emo_hash[western_emo]
   jap_emo = emo_hash["get_emoticon"][western_emo]
   
   if !jap_emo

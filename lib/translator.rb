@@ -24,7 +24,7 @@ def get_japanese_emoticon(file_path, western_emo)
   binding.pry
   if !jap_emo
     puts "Sorry I don't know that emoji"
-    return nil
+    
   else
     return jap_emo
   end

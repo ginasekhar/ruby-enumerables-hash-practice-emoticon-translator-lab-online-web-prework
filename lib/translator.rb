@@ -21,14 +21,12 @@ def get_japanese_emoticon(file_path, western_emo)
   emo_hash = load_library(file_path)
   
   if !emo_hash[western_emo]
+    puts "Sorry I don't know that emoji"
+    return nil
+  end
   jap_emo = emo_hash["get_emoticon"][western_emo]
   
-  if !jap_emo
-    puts "Sorry, I don't know what that emoji means"
-    return nil
-  else
-    return jap_emo
-  end
+  return jap_emo
 end
 
 def get_english_meaning(file_path, western_emo)

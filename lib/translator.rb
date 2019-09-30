@@ -11,10 +11,7 @@ def load_library(file_path)
     japanese_emo = value_array[1]
     new_hash["get_emoticon"][english_emo] = japanese_emo
     new_hash["get_meaning"][japanese_emo] = key_meaning
-    
-    
   end
-  binding.pry
   new_hash
 end
 
@@ -25,6 +22,7 @@ def get_japanese_emoticon(file_path, western_emo)
   
   jap_emo = emo_hash[western_emo]
   
+  binding.pry
   
 end
 

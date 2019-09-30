@@ -35,11 +35,11 @@ def get_english_meaning(file_path, jap_emo)
   
   meaning = emo_hash["get_meaning"][jap_emo]
   #binding.pry
-  if !jap_emo
+  if !meaning
     return "Sorry, that emoticon was not found"
-    
   else
-    return jap_emo
-  end# code goes here
+    return meaning
+  end
+  
   #binding.pry
 end

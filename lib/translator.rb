@@ -22,10 +22,11 @@ def get_japanese_emoticon(file_path, western_emo)
   
   jap_emo = emo_hash["get_emoticon"][western_emo]
   
-  binding.pry
+  
   
 end
 
 def get_english_meaning(file_path, western_emo)
   # code goes here
+  #binding.pry
 end

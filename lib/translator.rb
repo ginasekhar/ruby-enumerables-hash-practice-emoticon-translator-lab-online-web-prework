@@ -23,11 +23,8 @@ def get_japanese_emoticon(file_path, western_emo)
   
   emo_hash = load_library(file_path)
   
-  jap_emo = emo_hash[western_emo].key
-  #binding.pry
-  #emoticon_hash.each do
-    
-  #done
+  jap_emo = emo_hash[western_emo]
+  
   
 end
 

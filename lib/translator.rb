@@ -23,7 +23,7 @@ def get_japanese_emoticon(file_path, western_emo)
   jap_emo = emo_hash["get_emoticon"][western_emo]
   #binding.pry
   if !jap_emo
-    puts "Sorry I don't know that emoji"
+    return "Sorry, that emoticon was not found"
     
   else
     return jap_emo

@@ -30,7 +30,16 @@ def get_japanese_emoticon(file_path, western_emo)
   end
 end
 
-def get_english_meaning(file_path, western_emo)
-  # code goes here
+def get_english_meaning(file_path, jap_emo)
+  emo_hash = load_library(file_path)
+  
+  meaning = emo_hash["get_meaning"][jap_emo]
+  #binding.pry
+  if !jap_emo
+    return "Sorry, that emoticon was not found"
+    
+  else
+    return jap_emo
+  end# code goes here
   #binding.pry
 end
